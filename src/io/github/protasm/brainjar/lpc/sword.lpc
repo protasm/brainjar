@@ -1,3 +1,0 @@
-int bar(int num) {
-  return num + 99;
-}

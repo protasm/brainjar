@@ -1,3 +1,0 @@
-int foo(object obj, int num) {
-  return obj->bar(num);
-}
