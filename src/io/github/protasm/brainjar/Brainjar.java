@@ -32,7 +32,16 @@ public class Brainjar {
     }
     
     public void loadWorld() {
-	FSSourceFile sf = load("glove.lpc");
+	FSSourceFile sf = load("sword.lpc");
+
+	if (sf == null)
+	    return;
+
+	objects.put(sf.dotName(), sf.lpcObject());
+
+	System.out.println(sf.dotName() + " loaded.");
+	
+	sf = load("player.lpc");
 
 	if (sf == null)
 	    return;
